@@ -7,7 +7,7 @@ The codes and plots I provide here were created to answer the 6 following questi
 
 2. Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.    --> Overall yes, but there was an increase in 2005
 
-        3. Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.--> Non-point, Non-road and On-road
+3. Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.  --> Non-point, Non-road and On-road
 
 4. Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?    --> They have overall decreased
 
