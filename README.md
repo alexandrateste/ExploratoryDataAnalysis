@@ -3,23 +3,17 @@ For this project, I used the provided data stemming from the National Emissions 
 
 The codes and plots I provide here were created to answer the 6 following questions:
 
-1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
-        <span style="color:blue">Yes</span>
+1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.   --> Yes
 
-2. Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
-        <span style="color:blue">Overall yes, but there was an increase in 2005</span>
+2. Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.    --> Overall yes, but there was an increase in 2005
 
-3. Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.
-        <span style="color:blue">Non-point, Non-road and On-road</span>
+        3. Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.--> Non-point, Non-road and On-road
 
-4. Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
-        <span style="color:blue">They have overall decreased</span>
+4. Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?    --> They have overall decreased
 
-5. How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
-        <span style="color:blue">They have decreased (cf. "Explanations" section below)</span>
+5. How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?      --> They have decreased (cf. "Explanations" section below)
 
-6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?
-        <span style="color:blue">Given the data I chose to conduct this analysis, emissions in Los Angeles were a lot higher than those in Baltimore. It was then not straightforward to see with certainty which city saw the biggest changes in PM2.5 emissions. This is why I plotted not only absolute emissions but also percentage differences over 3 years. From this plot, my answer to the question is Baltimore (as shown on the Percentage Difference graph).</span>
+6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?      --> Given the data I chose to conduct this analysis, emissions in Los Angeles were a lot higher than those in Baltimore. It was then not straightforward to see with certainty which city saw the biggest changes in PM2.5 emissions. This is why I plotted not only absolute emissions but also percentage differences over 3 years. From this plot, my answer to the question is Baltimore (as shown on the Percentage Difference graph).
 
 ## Explanation for the data considered as related to motor vehicles
 
@@ -33,6 +27,6 @@ This means:
 * all rows with Data.Category = "Onroad"
 * all rows with Data.Category="Nonroad" and Short.Name that contains "motorcycles"
 
-*Note: For Data.Category = "Nonpoint", I looked at EI.Sector ="Mobile - On-Road Gasoline Light Duty Vehicles" and "Mobile - Non-Road Equipment - Other", but they correspond to border crossing or non-US sources, which is not relevant here.
+*Note: For Data.Category = "Nonpoint", I looked at EI.Sector ="Mobile - On-Road Gasoline Light Duty Vehicles" and "Mobile - Non-Road Equipment - Other", but they correspond to border crossing or non-US sources, which is not relevant here.*
 
-For Data.Category = "Point", I looked at EI.Sector="Mobile - Non-Road Equipment - Gasoline", "Mobile - Non-Road Equipment - Diesel" and "Mobile - Non-Road Equipment - Other", but most of them corresponded to a Short.Name related to "Airport Ground Support Equipment" or "Industrial Fork Lift". So, I ignored these data rows.*
+*For Data.Category = "Point", I looked at EI.Sector="Mobile - Non-Road Equipment - Gasoline", "Mobile - Non-Road Equipment - Diesel" and "Mobile - Non-Road Equipment - Other", but most of them corresponded to a Short.Name related to "Airport Ground Support Equipment" or "Industrial Fork Lift". So, I ignored these data rows.*
