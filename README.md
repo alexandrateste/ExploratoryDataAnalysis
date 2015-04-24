@@ -1,9 +1,3 @@
----
-title: "Readme"
-author: "Alexandra Teste"
-date: "April 22, 2015"
-output: html_document
----
 ## Project Description and Questions
 For this project, I used the provided data stemming from the National Emissions Inventory, which records the number of tons of PM2.5 emitted from a variety of sources over the course of an entire year. The data used for this assignment actually spanned the years 1999, 2002, 2005, and 2008.
 
